@@ -155,6 +155,31 @@ main {
     justify-content: center;
  }
 
+ /* Times Section */ 
+ #times {
+        background: url("../images/dublin-city.webp") no-repeat center/cover;
+        /* Responsivity without requiring media query */
+        display: flex;
+        flex-wrap: wrap;
+ }
+
+ #times div {
+    color: #fafafa;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* Divs will expand to fill available space. Will not wrap in screens less than 400px */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* create grid of divs over back-ground image */
+    border: 2px solid white;
+ }
+
+#times h3 {
+    /* Override heading color set in general styles */
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
